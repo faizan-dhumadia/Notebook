@@ -4,7 +4,8 @@ import { setAuthToken, setEmail, setName, setPass, setUserId } from "../../store
 
 
 const UserState = (props) => {
-  const host = "http://localhost:5000"
+  // const host = "http://localhost:5000"
+  const host = process.env.REACT_APP_HOST
   const dispatch = useDispatch()
 
   const createUser = async (name, email, password) => {

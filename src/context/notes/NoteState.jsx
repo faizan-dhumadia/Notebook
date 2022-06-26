@@ -4,7 +4,8 @@ import { useDispatch, useSelector } from "react-redux";
 
 
 const NoteState = (props) => {
-    const host = "http://localhost:5000"
+    // const host = "http://localhost:5000"
+    const host = process.env.REACT_APP_HOST
     const notesInitial = []
     const [notes, setNotes] = useState(notesInitial)
 
