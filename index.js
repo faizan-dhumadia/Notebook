@@ -3,8 +3,9 @@ const express = require('express')
 
 var cors = require('cors')
 const corsOption = {
-    origin: '*',
-    credentials: true,
+    originWhitelist: [], // Allow all origins
+    requireHeader: ['origin', 'x-requested-with'],
+    removeHeaders: ['cookie', 'cookie2']
 }
 connectToMongo();
 const app = express()
