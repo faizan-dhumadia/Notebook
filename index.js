@@ -3,7 +3,7 @@ const express = require('express')
 
 var cors = require('cors')
 const corsOption = {
-    origin: "*",
+    origin: "https://notebook-on-cloud.herokuapp.com",
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     preflightContinue: false,
     optionsSuccessStatus: 204
