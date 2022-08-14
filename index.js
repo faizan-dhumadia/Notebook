@@ -4,9 +4,7 @@ const express = require('express')
 var cors = require('cors')
 const corsOption = {
     origin: "https://notebook-on-cloud.herokuapp.com",
-    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-    preflightContinue: false,
-    optionsSuccessStatus: 204
+    credentials: true,
 }
 connectToMongo();
 const app = express()
